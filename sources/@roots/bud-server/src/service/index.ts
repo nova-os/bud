@@ -121,7 +121,7 @@ export class Server extends Service implements BudServer {
           return this.appliedMiddleware[key];
         },
       ),
-    })).then((middleware) => {
+    ).then((middleware) => {
       middleware.forEach((m) => {
         if (m) {
           /** apply middleware */
